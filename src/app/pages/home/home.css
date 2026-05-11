@@ -1,0 +1,41 @@
+
+
+button.button-blue {
+    border: none;
+    background: #271975;
+    color: white;
+    padding: 10px;
+    width: 20vw;
+    border-radius: 5px;
+}
+
+div#cardIndex {
+    height: 20vw;
+    background: linear-gradient(45deg, #271975, #e5b7a1);
+    text-align: center;
+    margin: auto;
+    color: white;
+    border: none;
+}
+
+div#cardIndexBody {
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+img.svg {
+    width: 50px;
+}
+
+.p-0 {
+    padding: 0 !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}

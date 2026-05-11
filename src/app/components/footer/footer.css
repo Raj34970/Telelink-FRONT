@@ -1,0 +1,25 @@
+a {
+    font-size: medium;
+    color: white !important;
+    font-weight: 400;
+    padding: 8px;
+}
+
+
+img#footer-logo {
+    width: 100px;
+}
+
+nav.footer-nav-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer {
+    background: #616161;
+}
