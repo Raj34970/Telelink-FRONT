@@ -1,119 +1,47 @@
 <app-header></app-header>
-<div id="container">
-    <div class="container d-flex justify-content-around">
-        <div class="row m-5">
-            <div class="col m-3">
-                <a routerLink="/Lxhome">
-                    <div #card1 class="card" id="cardIndex"
-                        (mousemove)="onMouseMove($event, card1)" 
-                        (mouseleave)="onMouseLeave(card1)">
-                        <div class="card-body" id="cardIndexBody">
-                            <h5 class="card-title">Product</h5>
-                        </div>
+<div class="container d-flex justify-content-around mt-5 mb-5">
+    <div class="row">
+        <div class="col m-4">
+            <a routerLink="/telelink">
+                <div #card1 class="card" id="cardIndex"
+                    (mousemove)="onMouseMove($event, card1)" 
+                    (mouseleave)="onMouseLeave(card1)">
+                    <div class="card-body" id="cardIndexBody">
+                        <h5 class="card-title">Product</h5>
+                        <h5 class="card-title">Telelink</h5>
+                        <p>The product suite at telelink.fr focuses on the technical assets and analytical tools required to manage 
+                            and understand macro-scale connectivity. We provide comprehensive documentation and utility 
+                            profiles for cellular infrastructure, ranging from the physical structural analysis of lattice and 
+                            monopole towers to the logical mapping of Radio Frequency (RF) propagation.</p>
                     </div>
-                </a>                    
-            </div>
-            <div class="col m-3">
+                </div>
+            </a>   
+        </div>
+        <div class="col m-4">
+            <a routerLink="/lxhome">
                 <div #card2 class="card" id="cardIndex"
                     (mousemove)="onMouseMove($event, card2)" 
                     (mouseleave)="onMouseLeave(card2)">
                     <div class="card-body" id="cardIndexBody">
                         <h5 class="card-title">Services</h5>
+                        <h5 class="card-title">Lxhome</h5>
+                        <p>
+                            The services powered by lxhome represent the operational engine of the lab, 
+                            delivering enterprise-grade reliability through a high-performance private cloud. 
+                            At the core of our service offering is a robust security layer featuring next-generation 
+                            firewalling and intrusion detection, ensuring that all data remains protected behind a 
+                            hardened perimeter.
+                        </p>
                     </div>
                 </div>
-            </div>
+            </a>
         </div>
-    </div>
-    <div class="container" id="bodyContainer">
-        <div class="left-region">
-            <h1 id="headline">Our service to your business</h1>
-            <p id="index_paragraph">Welcome to our cutting-edge telecommunications hub, 
-                where connectivity meets innovation! At Telelink, 
-                we pride ourselves on delivering seamless and reliable 
-                communication solutions tailored for the modern world. 
-                Whether you're looking for lightning-fast internet, 
-                crystal-clear voice services, or state-of-the-art 
-                video conferencing, we have you covered. Our commitment 
-                to technological excellence ensures that you stay connected 
-                with the world, effortlessly bridging distances and fostering 
-                meaningful connections. Explore our range of services designed 
-                to enhance your digital lifestyle, and experience the future 
-                of communication at your fingertips. Join us on the forefront 
-                of telecommunications, where possibilities are limitless, and 
-                communication knows no bounds. Welcome to the future of 
-                connectivity, welcome to Telelink.</p>
-        </div>
-    </div>
-    <div class="container">
-        <h1 class="text-center p-3" id="headingline">Our domain of activities</h1>
-        <div class="row m-3">
-            <div class="col-4">
-                <div class="card w-a h-100">
-                    <img class="card-img-top" src="assets/telecom.jpg" alt="Card image cap">
-                    <div class="card-body p-0">
-                        <h5 class="card-title p-3 bg-light" style="color: #271975">Telecom</h5>
-                        <p class="card-text p-3" id="paragraph">Unlock Connectivity: Immerse yourself in the world of seamless communication 
-                            with our Telecom services. From high-speed internet to crystal-clear voice calls, experience 
-                            the power of uninterrupted connectivity. Whether you're at home, in the office, or on the go, 
-                            our Telecom solutions ensure you stay connected effortlessly. Embrace a new era of communication 
-                            with Telelink.</p>
-                        <div class="card-button p-3 text-center">
-                            <button class="button-blue"><a href="/telelink/php/telecom.php">Discover<img src="assets/right-arrow-svg.svg" alt="rightArrow" class="svg"></a></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-4">
-                <div class="card w-a h-100">
-                    <img class="card-img-top" src="assets/informatiques.png" alt="Card image cap">
-                    <div class="card-body p-0">
-                        <h5 class="card-title p-3 bg-light" style="color: #271975">Informatiques</h5>
-                        <p class="card-text p-3" id="paragraph">Elevate Your Digital Realm: Dive into the future with our cutting-edge informatiques 
-                            solutions. We specialize in harnessing the power of information technology to propel your business forward. 
-                            From robust IT infrastructure to customized software solutions, we craft digital ecosystems that empower 
-                            your operations. Discover the transformative potential of informatiques services tailored to meet your 
-                            unique needs.</p>
-                        <div class="card-button p-3 text-center">
-                            <button class="button-blue"><a href="/telelink/php/serverInfo.php">Discover<img src="assets/right-arrow-svg.svg" alt="rightArrow" class="svg"></a></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-4">
-                <div class="card w-a h-100">
-                    <img class="card-img-top" src="assets/consulting.jpg" alt="Card image cap">
-                    <div class="card-body p-0">
-                        <h5 class="card-title p-3 bg-light" style="color: #271975">Consulting</h5>
-                        <p class="card-text p-3" id="paragraph">Navigating Success Together: Embark on a journey of strategic excellence with our consulting services. 
-                            Our team of seasoned professionals is dedicated to guiding you through challenges and maximizing opportunities. 
-                            Whether you're seeking business expansion, process optimization, or organizational development, our consulting 
-                            expertise is your compass. Let's collaborate to turn aspirations into success.</p>
-                        <div class="card-button p-3 text-center">
-                            <button class="button-blue"><a href="#">Discover<img src="assets/right-arrow-svg.svg" alt="rightArrow" class="svg"></a></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <h1 class="text-center p-3" id="headingline" style="background: #271975; color: white;">Our global advisors & partners</h1>
-    <div class="marques" id="marquesContainer">
-        <img src="assets/Camtel.jpg" id="brand" />
-        <img src="assets/huawei.png" id="brand" />
-        <img src="assets/rakuten.jpg" id="brand" />
-        <img src="assets/scati.png" id="brand" />
-        <img src="assets/omniacom.jpg" id="brand" />
-        <img src="assets/sagemcom.jpg" id="brand" />
-        <img src="assets/netone.png" id="brand" />
-        <img src="assets/isat.png" id="brand" />
-        <img src="assets/camusat.png" id="brand" />
-        <img src="assets/reverencetelecom.png" id="brand" />
-        <img src="assets/vodacom.png" id="brand" />
-    </div>
-    <div class="buttons-box d-flex justify-content-around mb-5 mt-5">
-        <button class="button-blue" style="width: 150px;"><a href="/telelink/php/solutions.php">Our Solutions</a></button>
-        <button class="button-blue" style="width: 150px;"><a href="/telelink/php/supplychain.php">Supplychain</a></button>
     </div>
 </div>
-
+<div class="choose">
+    <p>Whether you are interested in the heights of cellular infrastructure or the depth of 
+        automated cloud engineering, the choice is yours. Select a card above to dive into the 
+        technical details of our telecom utilities or to explore the inner workings of the 
+        lxhome automation stack. From the physical mast to the digital manifest, your journey into connectivity starts with a single click.</p>
+</div>
 <app-footer></app-footer>

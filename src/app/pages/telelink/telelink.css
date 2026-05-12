@@ -1,0 +1,34 @@
+
+
+div#cardIndexBody {
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+img.svg {
+    width: 50px;
+}
+
+.p-0 {
+    padding: 0 !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+h1#headline, h1#headingline {
+    text-align: center;
+    background: #3e3959;
+    padding: 20px;
+    color: white;
+    background: #3e3959;
+    font-size: larger;
+}
+
+

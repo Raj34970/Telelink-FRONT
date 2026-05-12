@@ -5,6 +5,7 @@ p {
 
 .h2 {
     background: #524e67;
+    font-size: large;
     color: white;
     padding: 20px;
     margin-top: 30px;
@@ -12,10 +13,23 @@ p {
 }
 
 .card {
-    width: 30vw;
-    height: 12vw;
+    min-width: 30vw;
+    width: -webkit-fill-available;
+    min-height: 12vw;
+    height: -webkit-fill-available;
     margin: auto;
     background: linear-gradient(45deg, #827acf57, #d3996230);
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+img.gif {
+    width: 45vw;
+    padding: 10px;
 }
 
 h5.card-title {

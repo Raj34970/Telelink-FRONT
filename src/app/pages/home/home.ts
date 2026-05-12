@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 import { Header } from '../../components/header/header';
 import { Footer } from '../../components/footer/footer';
-import { Lxhome } from '../lxhome/lxhome';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-home',
-  imports: [Header, Footer, Lxhome],
+  imports: [Header, Footer, RouterModule],
   templateUrl: './home.html',
   styleUrl: './home.css',
 })

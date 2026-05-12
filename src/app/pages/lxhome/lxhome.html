@@ -11,20 +11,26 @@
         <div class="col">
             <div class="card">
                 <h5 class="card-title">🏗️ Infrastructure & Virtualization</h5>
-                <p class="card-text">The foundation of lxhome is built on robust hypervisor technology (Proxmox/ESXi), 
-                    allowing for the dense consolidation of resources. This layer provides the agility 
-                    to spin up isolated environments for testing, development, and production-grade self-hosting.
-                </p>
+                <div class="card-body">
+                    <p class="card-text">The foundation of lxhome is built on robust hypervisor technology (Proxmox/ESXi), 
+                        allowing for the dense consolidation of resources. This layer provides the agility 
+                        to spin up isolated environments for testing, development, and production-grade self-hosting.
+                    </p>
+                    
+                </div>
             </div>
         </div>
         <div class="col">
             <div class="card">
-                <h5 class="card-title">☸️ Containerization & Orchestration<</h5>
-                <p class="card-text">At the heart of the lab lies a Kubernetes cluster, managing the lifecycle of microservices.</p>
-                <ul>
-                    <li><b>Orchestration:</b> Using K8s to ensure high availability, self-healing, and seamless scaling of applications.</li>
-                    <li><b>Containerization:</b> Leveraging Docker to package services into portable, reproducible units.</li>
-                </ul>
+                <h5 class="card-title">☸️ Containerization & Orchestration</h5>
+                <div class="card-body">
+                    <p class="card-text">At the heart of the lab lies a Kubernetes cluster, managing the lifecycle of microservices.</p>
+                    <ul>
+                        <li><b>Orchestration:</b> Using K8s to ensure high availability, self-healing, and seamless scaling of applications.</li>
+                        <li><b>Containerization:</b> Leveraging Docker to package services into portable, reproducible units.</li>
+                    </ul>
+                    
+                </div>
             </div>
         </div>
     </div>
@@ -32,21 +38,26 @@
         <div class="col">
             <div class="card">
                 <h5 class="card-title">🤖 Automation with Ansible</h5>
-                <p class="card-text">lxhome operates on the principle of <b>Infrastructure as Code (IaC).</b></p>
-                <ul>
-                    <li><b>Zero-Touch Deployment:</b> Using Ansible playbooks to automate everything from base OS hardening and package management to complex multi-node configurations.</li>
-                    <li><b>Consistency:</b> Ensuring that every VM and container is configured identically to its "code" definition, eliminating configuration drift.</li>
-                </ul>
+                <div class="card-body">
+                    <p class="card-text">lxhome operates on the principle of <b>Infrastructure as Code (IaC).</b></p>
+                    <ul>
+                        <li><b>Zero-Touch Deployment:</b> Using Ansible playbooks to automate everything from base OS hardening and package management to complex multi-node configurations.</li>
+                        <li><b>Consistency:</b> Ensuring that every VM and container is configured identically to its "code" definition, eliminating configuration drift.</li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="col">
             <div class="card">
                 <h5 class="card-title">🔄 CI/CD & DevOps Lifecycle</h5>
-                <p class="card-text">The lab is integrated with a modern <b>CI/CD pipeline.</b></p>
-                <ul>
-                    <li><b>Continuous Integration:</b> Code pushed to GitHub (Raj34970) triggers automated builds and tests.</li>
-                    <li><b>Continuous Deployment:</b>  Successful builds are automatically deployed to the production environment, ensuring that the latest innovations are live within minutes.</li>
-                </ul>
+                <div class="card-body">
+                    <p class="card-text">The lab is integrated with a modern <b>CI/CD pipeline.</b></p>
+                    <ul>
+                        <li><b>Continuous Integration:</b> Code pushed to GitHub (Raj34970) triggers automated builds and tests.</li>
+                        <li><b>Continuous Deployment:</b>  Successful builds are automatically deployed to the production environment, ensuring that the latest innovations are live within minutes.</li>
+                    </ul>
+                    
+                </div>
             </div>
         </div>
     </div>
@@ -54,12 +65,29 @@
         <div class="col">
             <div class="card">
                 <h5 class="card-title">🌐 Advanced Networking</h5>
-                <p class="card-text">Connectivity within lxhome is engineered for security and performance:</p>
-                <ul>
-                    <li><b>VLAN Segmentation:</b> Isolating management traffic from public-facing services and IoT devices.</li>
-                    <li><b>Traffic Management:</b> Implementing advanced routing and reverse proxies (Traefik/Nginx) to handle incoming requests securely with SSL termination.</li>
-                </ul>
+                <div class="card-body">
+                    <p class="card-text">Connectivity within lxhome is engineered for security and performance:</p>
+                    <ul>
+                        <li><b>VLAN Segmentation:</b> Isolating management traffic from public-facing services and IoT devices.</li>
+                        <li><b>Traffic Management:</b> Implementing advanced routing and reverse proxies (Traefik/Nginx) to handle incoming requests securely with SSL termination.</li>
+                    </ul>
+                    
+                </div>
             </div>
         </div>
     </div>
+    <a routerLink="automation" id="links"><button class="button-blue">Discover<img src="assets/right-arrow-svg.svg" alt="rightArrow" class="svg_arrow"></button></a>
+    <div class="h2">Infra: lxhome</div>
+    <div class="row">
+        <div class="col d-flex flex-column align-items-center m-2" style="background: #eeee;">
+             <p class="m-5">
+                lxhome is not just a lab; it's a microcosm of the modern IT landscape. 
+                It provides a hands-on environment for learning, experimentation, and innovation in the realms of cloud computing, 
+                DevOps practices, and network engineering. Whether you're a student, an IT professional, or an enthusiast, 
+                lxhome offers a unique opportunity to explore the cutting-edge technologies that are shaping the future of IT.
+            </p>
+            <img src="assets/lxhome.gif" alt="lxhome_infra" class="gif">
+        </div>
+    </div>
 </div>
+<app-footer></app-footer>
