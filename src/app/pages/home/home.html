@@ -1,52 +1,53 @@
 <app-header></app-header>
-
-
 <div id="container">
-    <div class="background">
-        <div class="container d-flex justify-content-around m-5">
-            <!-- Card 1: Product -->
-            <div #card1 class="card" style="width: 18rem;" id="cardIndex"
-                (mousemove)="onMouseMove($event, card1)" 
-                (mouseleave)="onMouseLeave(card1)">
-                <div class="card-body" id="cardIndexBody">
-                    <h5 class="card-title">Product</h5>
-                </div>
+    <div class="container d-flex justify-content-around">
+        <div class="row m-5">
+            <div class="col m-3">
+                <a routerLink="/Lxhome">
+                    <div #card1 class="card" id="cardIndex"
+                        (mousemove)="onMouseMove($event, card1)" 
+                        (mouseleave)="onMouseLeave(card1)">
+                        <div class="card-body" id="cardIndexBody">
+                            <h5 class="card-title">Product</h5>
+                        </div>
+                    </div>
+                </a>                    
             </div>
-
-            <!-- Card 2: Services -->
-            <div #card2 class="card" style="width: 18rem;" id="cardIndex"
-                (mousemove)="onMouseMove($event, card2)" 
-                (mouseleave)="onMouseLeave(card2)">
-                <div class="card-body" id="cardIndexBody">
-                    <h5 class="card-title">Services</h5>
+            <div class="col m-3">
+                <div #card2 class="card" id="cardIndex"
+                    (mousemove)="onMouseMove($event, card2)" 
+                    (mouseleave)="onMouseLeave(card2)">
+                    <div class="card-body" id="cardIndexBody">
+                        <h5 class="card-title">Services</h5>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="container" id="bodyContainer">
-            <div class="left-region">
-                <h1 id="headline">Our service to your business</h1>
-                <p id="index_paragraph">Welcome to our cutting-edge telecommunications hub, 
-                    where connectivity meets innovation! At Telelink, 
-                    we pride ourselves on delivering seamless and reliable 
-                    communication solutions tailored for the modern world. 
-                    Whether you're looking for lightning-fast internet, 
-                    crystal-clear voice services, or state-of-the-art 
-                    video conferencing, we have you covered. Our commitment 
-                    to technological excellence ensures that you stay connected 
-                    with the world, effortlessly bridging distances and fostering 
-                    meaningful connections. Explore our range of services designed 
-                    to enhance your digital lifestyle, and experience the future 
-                    of communication at your fingertips. Join us on the forefront 
-                    of telecommunications, where possibilities are limitless, and 
-                    communication knows no bounds. Welcome to the future of 
-                    connectivity, welcome to Telelink.</p>
-            </div>
+    </div>
+    <div class="container" id="bodyContainer">
+        <div class="left-region">
+            <h1 id="headline">Our service to your business</h1>
+            <p id="index_paragraph">Welcome to our cutting-edge telecommunications hub, 
+                where connectivity meets innovation! At Telelink, 
+                we pride ourselves on delivering seamless and reliable 
+                communication solutions tailored for the modern world. 
+                Whether you're looking for lightning-fast internet, 
+                crystal-clear voice services, or state-of-the-art 
+                video conferencing, we have you covered. Our commitment 
+                to technological excellence ensures that you stay connected 
+                with the world, effortlessly bridging distances and fostering 
+                meaningful connections. Explore our range of services designed 
+                to enhance your digital lifestyle, and experience the future 
+                of communication at your fingertips. Join us on the forefront 
+                of telecommunications, where possibilities are limitless, and 
+                communication knows no bounds. Welcome to the future of 
+                connectivity, welcome to Telelink.</p>
         </div>
     </div>
     <div class="container">
         <h1 class="text-center p-3" id="headingline">Our domain of activities</h1>
         <div class="row m-3">
-            <div class="col">
+            <div class="col-4">
                 <div class="card w-a h-100">
                     <img class="card-img-top" src="assets/telecom.jpg" alt="Card image cap">
                     <div class="card-body p-0">
@@ -62,7 +63,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-4">
                 <div class="card w-a h-100">
                     <img class="card-img-top" src="assets/informatiques.png" alt="Card image cap">
                     <div class="card-body p-0">
@@ -78,7 +79,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-4">
                 <div class="card w-a h-100">
                     <img class="card-img-top" src="assets/consulting.jpg" alt="Card image cap">
                     <div class="card-body p-0">
