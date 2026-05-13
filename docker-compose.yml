@@ -1,0 +1,15 @@
+services:
+  telelink-web:
+    image: nginx:alpine
+    container_name: telelink
+    ports:
+      - "80:80"
+    volumes:
+      - /var/www/html/telelink:/usr/share/nginx/html:ro
+    restart: always
+    networks:
+      - telelink
+
+networks:
+  telelink:
+    driver: bridge
