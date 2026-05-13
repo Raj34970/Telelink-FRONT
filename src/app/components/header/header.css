@@ -8,12 +8,13 @@
     border-bottom: 1px solid #c9c9c9d6;
 }
 a#button-links {
-    font-size: medium;
+    font-size: large;
     color: white !important;
     font-weight: 400;
     padding: 8px;
     text-decoration: none;
     padding-inline: 30px;
+    font-family: monospace;
 }
 
 a#button-links:hover{
