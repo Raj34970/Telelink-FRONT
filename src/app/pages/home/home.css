@@ -10,11 +10,29 @@ div#cardIndex {
     border: none;
 }
 
+h5.heading {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 8px;
+    background: #5d5c74;
+    color: white;
+    border-radius: 5px;
+    font-weight: 300;
+}
+
 .choose {
     margin: 20px;
     background: #f3f3f3;
     padding: 16px;
     border-radius: 8px;
+}
+
+img.company-logo {
+    width: 60px;
+    padding: 8px;
+    background: white;
+    border-radius: 50%;
+    margin: 10px;
 }
 
 div#cardIndexBody {
@@ -29,5 +47,18 @@ a {
     text-decoration: none;
 }
 
-
-
+/* @media (min-width: 600px) {
+    .row {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+    
+    div#cardIndexBody {
+        height: max-content;
+        width: max-content !important;
+    }
+    div#cardIndex {
+        max-width: max-content !important;
+        height: -webkit-fill-available !important;
+    }
+} */

@@ -1,0 +1,18 @@
+
+
+h3#classic_heading, h4#classic_heading {
+    padding: 20px;
+    margin-top: 15px;
+    background: #53516c;
+    font-size: large;
+    color: white;
+    border-radius: 8px;
+}
+
+.box {
+    background: linear-gradient(45deg, #bcc6c778, transparent);
+    padding: 30px;
+    margin-bottom: 30px;
+    border: 1px solid #e2e2e2;
+    border-radius: 8px;
+}

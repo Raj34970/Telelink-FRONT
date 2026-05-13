@@ -2,12 +2,13 @@
 <div class="container d-flex justify-content-around mt-5 mb-5">
     <div class="row">
         <div class="col m-4">
+            <h5 class="heading">Product</h5>
             <a routerLink="/telelink">
                 <div #card1 class="card" id="cardIndex"
                     (mousemove)="onMouseMove($event, card1)" 
                     (mouseleave)="onMouseLeave(card1)">
                     <div class="card-body" id="cardIndexBody">
-                        <h5 class="card-title">Product</h5>
+                        <img src="assets/logo.png" alt="company logo" class="company-logo">
                         <h5 class="card-title">Telelink</h5>
                         <p>The product suite at telelink.fr focuses on the technical assets and analytical tools required to manage 
                             and understand macro-scale connectivity. We provide comprehensive documentation and utility 
@@ -18,12 +19,12 @@
             </a>   
         </div>
         <div class="col m-4">
+            <h5 class="heading">Services</h5>
             <a routerLink="/lxhome">
                 <div #card2 class="card" id="cardIndex"
                     (mousemove)="onMouseMove($event, card2)" 
                     (mouseleave)="onMouseLeave(card2)">
                     <div class="card-body" id="cardIndexBody">
-                        <h5 class="card-title">Services</h5>
                         <h5 class="card-title">Lxhome</h5>
                         <p>
                             The services powered by lxhome represent the operational engine of the lab, 

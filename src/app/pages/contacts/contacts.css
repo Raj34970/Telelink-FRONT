@@ -1,0 +1,25 @@
+
+.card-img-top {
+    width: 100px;
+    object-fit: cover;
+}
+
+div#card-holder {
+    margin: 20px;
+}
+
+.img-section {
+    margin: 20px;
+    margin-inline: auto;
+}
+
+.card-btn {
+    margin-bottom: 15px;
+}
+
+.card-body {
+    background: #54526c;
+    color: white;
+    border-radius: inherit;
+    margin: 5px;
+}

@@ -3,6 +3,8 @@ import { Home } from './pages/home/home';
 import { Lxhome } from './pages/lxhome/lxhome';
 import { Automation } from './pages/lxhome/automation/automation';
 import { Telelink } from './pages/telelink/telelink';
+import { About } from './pages/about/about';
+import { Contacts } from './pages/contacts/contacts';
 
 export const routes: Routes = [
     {   
@@ -29,5 +31,15 @@ export const routes: Routes = [
         path: 'lxhome/automation',
         component: Automation,
         title: 'automation'
+    },
+    {   
+        path: 'about',
+        component: About,
+        title: 'about'
+    },
+    {   
+        path: 'contacts',
+        component: Contacts,
+        title: 'contacts'
     },
 ];

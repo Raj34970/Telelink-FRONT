@@ -31,4 +31,15 @@ h1#headline, h1#headingline {
     font-size: larger;
 }
 
-
+p#index_paragraph {
+    background: #b2aec933;
+    padding: 20px;
+    color: #3e3959;
+    font-size: medium;
+    border-radius: 8px;
+    border: 1px solid #ededed;
+    margin: 40px;
+    margin-inline: 0;
+    font-family: cursive;
+    font-style: oblique;
+}

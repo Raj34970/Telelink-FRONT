@@ -63,5 +63,5 @@ nav.footer-section {
 
 .footer {
     background: #2d2c3d;
-    max-height: 30vw;
+    max-height: -webkit-fill-available;
 }

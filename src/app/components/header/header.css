@@ -51,3 +51,19 @@ span.badge.badge-pill.badge-info {
     background: #d72c2c;
     margin-inline: 10px;
 }
+
+
+/* @media (min-width: 600px) {
+    .container.d-flex.align-items-center.justify-content-between {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav.nav-links {
+        display: flex;
+        flex-direction: column;
+    }
+    .sign-in {
+        margin: 20px;
+    }
+} */
