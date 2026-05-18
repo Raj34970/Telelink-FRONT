@@ -13,12 +13,13 @@ p {
 }
 
 .card {
-    min-width: 30vw;
+   min-width: 30vw;
     width: -webkit-fill-available;
     min-height: 12vw;
     height: -webkit-fill-available;
     margin: auto;
-    background: linear-gradient(45deg, #827acf57, #d3996230);
+    background: linear-gradient(45deg, #948fc0a3, #c5b8abc4);
+    backdrop-filter: blur(4px);
 }
 
 .card-body {

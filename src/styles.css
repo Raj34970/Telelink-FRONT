@@ -16,3 +16,13 @@ img.svg_arrow {
     width: 30px;
     margin-inline: 10px;
 }
+
+div#content {
+    padding: 15px;
+    background: linear-gradient(45deg, #a8a7ba, #d0a71d00);
+    margin: 25px;
+    margin-inline: auto;
+    backdrop-filter: blur(6px);
+    border-radius: 14px;
+    border: 1px solid #b6b7bc;
+}
