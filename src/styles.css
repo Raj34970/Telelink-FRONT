@@ -1,6 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
 
-
 button.button-blue {
     border: none;
     background: #3f3b5a;
@@ -18,11 +17,20 @@ img.svg_arrow {
 }
 
 div#content {
+    min-height: 100vh;
     padding: 15px;
-    background: linear-gradient(45deg, #a8a7ba, #d0a71d00);
+    background: #e5eff3ed;
     margin: 25px;
     margin-inline: auto;
     backdrop-filter: blur(6px);
     border-radius: 14px;
     border: 1px solid #b6b7bc;
+    box-shadow: #72c5c6 1px 10px 40px;
+}
+
+@media (max-width: 600Px) {
+    div#content {
+        width: -webkit-fill-available;
+        margin: 10px;
+    }
 }

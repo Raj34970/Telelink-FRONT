@@ -23,3 +23,9 @@ div#card-holder {
     border-radius: inherit;
     margin: 5px;
 }
+
+@media (max-width: 600px) {
+    .col.d-flex.justify-content-center {
+        flex-direction: column;
+    }
+}

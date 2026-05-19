@@ -1,13 +1,15 @@
 
 
 div#cardIndex {
-   height: 25vw;
-    width: 25vw;
     background: linear-gradient(45deg, #271975, #e5b7a1);
     text-align: center;
     margin: auto;
     color: white;
     border: none;
+}
+
+.col.m-4{
+    width: auto;
 }
 
 h5.heading {
@@ -47,18 +49,9 @@ a {
     text-decoration: none;
 }
 
-/* @media (min-width: 600px) {
+@media (max-width: 600px) {
     .row {
-        display: flex !important;
-        flex-direction: column !important;
+        display: flex;
+        flex-direction: column;
     }
-    
-    div#cardIndexBody {
-        height: max-content;
-        width: max-content !important;
-    }
-    div#cardIndex {
-        max-width: max-content !important;
-        height: -webkit-fill-available !important;
-    }
-} */
+}

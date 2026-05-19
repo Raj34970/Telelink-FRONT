@@ -40,6 +40,14 @@ p#index_paragraph {
     border: 1px solid #ededed;
     margin: 40px;
     margin-inline: 0;
-    font-family: cursive;
-    font-style: oblique;
+    font-style: normal;
+}
+
+@media (max-width: 600px) {
+    .row.m-3{
+        flex-direction: column;
+    }
+    .col-4 {
+        width: max-content;
+    }
 }

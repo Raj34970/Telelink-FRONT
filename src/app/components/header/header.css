@@ -53,10 +53,12 @@ span.badge.badge-pill.badge-info {
 }
 
 
-/* @media (min-width: 600px) {
+@media (max-width: 600px) {
     .container.d-flex.align-items-center.justify-content-between {
         display: flex;
         flex-direction: column;
+        width: min-content;
+        margin: 0;
     }
 
     nav.nav-links {
@@ -65,5 +67,6 @@ span.badge.badge-pill.badge-info {
     }
     .sign-in {
         margin: 20px;
+        margin-inline: auto;
     }
-} */
+}

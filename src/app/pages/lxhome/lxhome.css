@@ -39,3 +39,9 @@ h5.card-title {
     padding: 8px;
     padding-inline: 15px;
 }
+
+@media (max-width: 600px){
+    .col {
+        margin-bottom: 20px;
+    }
+}

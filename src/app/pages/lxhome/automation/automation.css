@@ -16,3 +16,12 @@ h3#classic_heading, h4#classic_heading {
     border: 1px solid #e2e2e2;
     border-radius: 8px;
 }
+
+@media (max-width: 600px) {
+    .row {
+        flex-direction: column;
+    }
+    .col-7, .col-5 {
+        width: auto;
+    }
+}
