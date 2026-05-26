@@ -1,12 +1,22 @@
-
-.header{
+.header {
     background: linear-gradient(304deg, #140e35d6, #1e434547);
     position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 100; /* Bumped up slightly to stay on top */
     backdrop-filter: blur(6px);
     border-bottom: 1px solid #c9c9c9d6;
 }
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 5px 15px;
+}
+
 a#button-links {
     font-size: large;
     color: white !important;
@@ -17,7 +27,7 @@ a#button-links {
     font-family: monospace;
 }
 
-a#button-links:hover{
+a#button-links:hover {
     color: #61598d !important;
     background: #f1f1f1;
     cursor: pointer;
@@ -25,13 +35,21 @@ a#button-links:hover{
     transition: all 0.3s ease;
 }
 
-
 img#logo {
     width: 35px;
     margin: 10px;
     background: #f1f1f1;
     border-radius: 50%;
     padding: 2px;
+}
+
+/* Desktop layout container */
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+    margin-left: 20px;
 }
 
 nav.nav-links {
@@ -46,27 +64,54 @@ img#login-icon {
     border-radius: 50%;
 }
 
-
 span.badge.badge-pill.badge-info {
     background: #d72c2c;
     margin-inline: 10px;
 }
 
-
-@media (max-width: 600px) {
+/* --- MOBILE RESPONSIVE STYLES --- */
+@media (max-width: 768px) { /* Bumped to 768px to account for normal tablet/mobile breakpoints */
+    
     .container.d-flex.align-items-center.justify-content-between {
-        display: flex;
+        flex-wrap: wrap; /* Allows menu to drop to the next line */
+    }
+
+    .menu-toggle {
+        display: block; /* Show hamburger button */
+    }
+
+    /* The wrapper that handles the smooth sliding */
+    .nav-container {
         flex-direction: column;
-        width: min-content;
-        margin: 0;
+        width: 100%;
+        margin-left: 0;
+        max-height: 0;          /* Hidden by default */
+        overflow: hidden;       /* Trims off the content while closed */
+        transition: max-height 0.4s ease-in-out; /* The smooth animation */
+    }
+
+    /* When active/pressed, expand to fit contents smoothly */
+    .nav-container.show {
+        max-height: 400px; /* Adjust if your content needs more room */
     }
 
     nav.nav-links {
         display: flex;
         flex-direction: column;
+        width: 100%;
+        text-align: center;
+        gap: 10px;
+        padding-top: 15px;
     }
+
+    a#button-links {
+        display: block;
+        width: 100%;
+        padding-block: 12px;
+    }
+
     .sign-in {
-        margin: 20px;
-        margin-inline: auto;
+        margin: 20px auto;
+        text-align: center;
     }
 }

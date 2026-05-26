@@ -19,13 +19,12 @@ img.svg_arrow {
 div#content {
     min-height: 100vh;
     padding: 15px;
-    background: #e5eff3ed;
+    background: #e7e7e7ed;
     margin: 25px;
     margin-inline: auto;
     backdrop-filter: blur(6px);
     border-radius: 14px;
     border: 1px solid #b6b7bc;
-    box-shadow: #72c5c6 1px 10px 40px;
 }
 
 @media (max-width: 600Px) {
